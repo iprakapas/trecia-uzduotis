@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koncerto svetaine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="background-video" autoplay loop muted>
+        <source src="https://drive.google.com/uc?export=download&id=1J4mLqj_-T7anZFPHoxHtwr94TpHwrwYV">
+    </video>
+
+    <h1 class="multicolortext">Vienintelis pasirodymas tavo mieste!</h1>
+
+    <!-- Video -->
+    <h2>Žinomiausi grupės pasirodymai!</h2>
+
+    <div class="center">
+        <video src="https://drive.google.com/uc?export=download&id=1bFnUxfpunUiWsJ9jgXwTvyi4Ioikv8RR" width="500" controls autoplay loop muted></video>
+        <video src="https://drive.google.com/uc?export=download&id=1wdX3iPkLGL3dclNvrIjKJ3O3_Irh3z8L" width="500" controls autoplay loop></video>
+        <video src="https://drive.google.com/uc?export=download&id=1UCJus1Ff4OLFlgy3HvAHoHd6SOsrP5qa" width="500" controls autoplay loop muted></video>
+    </div>
+
+    <!-- Audio -->
+    <h2>Geriausi visų laikų hitai!</h2>
+    <ul style="text-align: center;">
+        <li><audio src="https://drive.google.com/uc?export=download&id=15oYpMXzdRZirc0wXzIcYfl5zVS4GUYiD" controls></audio></li>
+        <li><audio src="https://drive.google.com/uc?export=download&id=1bLNkNP83WFZFP5psTeSS_d8NfDsgxk46" controls></audio></li>
+        <li><audio src="https://drive.google.com/uc?export=download&id=14UrQMiPWWl041SE3yl7hVDGS0A25gKTE" controls></audio></li>
+    </ul>
+
+    <!-- Map -->
+    <br>
+    <h2>Koncerto vieta</h2>
+    <div class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11840.87752524786!2d30.05504826262332!3d51.3986839379446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x51f528bbc76dc770!2sPalace%20of%20Culture%20Energetik!5e0!3m2!1sen!2slt!4v1642369738962!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+
+    <!-- Klausimai -->
+    <h2>Įsigyk bilietą pirmas!</h2>
+    <form style="text-align: center;" action="submit.html" method="get">
+
+        <h3 style="color: gold;">Registracijos forma</h3>
+        <label for="name" ><b>Vardas</b></label>
+        <input type="text" id="name" name="name" placeholder= "Vardas" required><br>
+
+        <label for="lname"><b>Pavardė</b></label>
+        <input type="text" id="lname" name="lname" placeholder="Pavardė" required><br>
+
+        <label for="email"><b>El. Paštas</b></label>
+        <input type="email" id="email" name="email" placeholder="a@b.lt" required><br>
+
+        <label for="ConcDate"><b>Koncerto data</b></label>
+        <select name="ConcDate" id="ConcDate" required>
+            <option value=""></option>
+            <option value="2022-02-29">2022-02-29</option>
+            <option value="2022-03-32">2022-03-32</option>
+            <option value="2021-12-31">2021-12-31</option>
+        </select>
+        <br>
+        <button>Pirkti bilietą</button>
+    </form>
+
+</body>
+</html>
